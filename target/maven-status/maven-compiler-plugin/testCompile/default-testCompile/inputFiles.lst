@@ -1,7 +1,8 @@
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\hook\Hook.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\pages\Login_page.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\pages\Register.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\pages\Terms_of_license.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\playwright_config\Playwright_Config.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\step_definitions\Global_step_definition.java
-C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\test_runner\Test_Runner.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\utils\Actions.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\pages\Terms_of_license.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\step_definitions\Step_definition.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\hook\Hook.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\pages\Login_page.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\playwright_config\Playwright_Config.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\test_runner\Test_Runner.java
+C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\src\test\java\com\rainbird\pages\Register.java
