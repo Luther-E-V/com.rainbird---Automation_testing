@@ -1,0 +1,11 @@
+pages\Register$Register_Preferences.class
+test_runner\Test_Runner.class
+hook\Hook.class
+pages\Login_page.class
+playwright_config\Playwright_Config.class
+pages\Register$Register_miscellaneous_section.class
+pages\Terms_of_license.class
+pages\Register.class
+pages\Register$Register_Account_Information.class
+pages\Register$Register_Contact_and_Login_Information.class
+step_definitions\Global_step_definition.class
