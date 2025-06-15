@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.rainbird.test_runner.Test_Runner" time="12.648" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.rainbird.test_runner.Test_Runner" time="93.933" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\hi\AppData\Local\Temp\surefire1344584503297709876\surefirebooter-20250610180454168_3.jar C:\Users\hi\AppData\Local\Temp\surefire1344584503297709876 2025-06-10T18-04-54_087-jvmRun1 surefire-20250610180454168_1tmp surefire_0-20250610180454168_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\hi\AppData\Local\Temp\surefire2522609046082248140\surefirebooter-20250616004225863_3.jar C:\Users\hi\AppData\Local\Temp\surefire2522609046082248140 2025-06-16T00-42-25_790-jvmRun1 surefire-20250616004225863_1tmp surefire_0-20250616004225863_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\hi"/>
     <property name="user.language" value="en"/>
@@ -26,11 +26,11 @@
     <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\hi\AppData\Local\Temp\surefire1344584503297709876\surefirebooter-20250610180454168_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hi\AppData\Local\Temp\surefire2522609046082248140\surefirebooter-20250616004225863_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24+36-3646"/>
@@ -58,148 +58,58 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="User access page and start to register an account" classname="Registration" time="3.699">
-    <error message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;TargetClosedError&#10;  stack=&apos;TargetClosedError:Target page, context or browser has been closed&#10;Error&#10;    at captureRawStack (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\stackTrace.js:36:17)&#10;    at LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:89:52)&#10;    at LongStandingScope.race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:82:17)&#10;    at C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:43&#10;    at Array.map (&lt;anonymous&gt;)&#10;    at LongStandingScope.raceMultiple (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:32)&#10;    at Frame.retryWithProgressAndTimeouts (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:931:40)&#10;    at async C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:1023:29&#10;    at async ProgressController.run (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\progress.js:79:22)&#10;    at async FrameDispatcher.click (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\frameDispatcher.js:157:12)&#10;    at async LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:94:14)&#10;    at async FrameDispatcher._handleCommand (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:98:14)&#10;    at async DispatcherConnection.dispatch (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:366:22)&#10;}&#10;Call log:&#10;-   - waiting for locator(&quot;//a[text()=&apos;Create Account&apos;]&quot;)&#10;" type="com.microsoft.playwright.impl.TargetClosedError"><![CDATA[com.microsoft.playwright.impl.TargetClosedError: 
-Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\stackTrace.js:36:17)
-    at LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:89:52)
-    at LongStandingScope.race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:82:17)
-    at C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:43
-    at Array.map (<anonymous>)
-    at LongStandingScope.raceMultiple (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:32)
-    at Frame.retryWithProgressAndTimeouts (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:931:40)
-    at async C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\frameDispatcher.js:157:12)
-    at async LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async FrameDispatcher._handleCommand (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:98:14)
-    at async DispatcherConnection.dispatch (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:366:22)
-}
-Call log:
--   - waiting for locator("//a[text()='Create Account']")
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
-	at com.microsoft.playwright.Locator.click(Locator.java:2508)
-	at com.rainbird.utils.Actions.Click(Actions.java:9)
-	at com.rainbird.step_definitions.Step_definition.user_click_create_an_account(Step_definition.java:22)
-	at ✽.User click Create an account(file:///C:/Users/hi/Desktop/EERP_Internal_Auto_testing/com.rainbird/src/test/resources/Feature/Register.feature:4)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\stackTrace.js:36:17)
-    at LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:89:52)
-    at LongStandingScope.race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:82:17)
-    at C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:43
-    at Array.map (<anonymous>)
-    at LongStandingScope.raceMultiple (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:32)
-    at Frame.retryWithProgressAndTimeouts (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:931:40)
-    at async C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\frameDispatcher.js:157:12)
-    at async LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:94:14)
-    at async FrameDispatcher._handleCommand (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:98:14)
-    at async DispatcherConnection.dispatch (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:366:22)
-}
-Call log:
--   - waiting for locator("//a[text()='Create Account']")
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 14 more
-]]></error>
+  <testcase name="User access page and start to register an account" classname="Registration" time="84.83">
     <system-out><![CDATA[Test begins
 
-Scenario: User access page and start to register an account &amp#27;[90m# src/test/resources/Feature/Register.feature:2&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser access to page&amp#27;[0m                                 &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_access_to_page()&amp#27;[0m
-  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser click Create an account&amp#27;[0m                         &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_click_create_an_account()&amp#27;[0m
-      &amp#27;[31mcom.microsoft.playwright.impl.TargetClosedError: Error {
-        message='Target page, context or browser has been closed
-        name='TargetClosedError
-        stack='TargetClosedError:Target page, context or browser has been closed
-      Error
-          at captureRawStack (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\stackTrace.js:36:17)
-          at LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:89:52)
-          at LongStandingScope.race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:82:17)
-          at C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:43
-          at Array.map (<anonymous>)
-          at LongStandingScope.raceMultiple (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:32)
-          at Frame.retryWithProgressAndTimeouts (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:931:40)
-          at async C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:1023:29
-          at async ProgressController.run (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\progress.js:79:22)
-          at async FrameDispatcher.click (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\frameDispatcher.js:157:12)
-          at async LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:94:14)
-          at async FrameDispatcher._handleCommand (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:98:14)
-          at async DispatcherConnection.dispatch (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:366:22)
-      }
-      Call log:
-      -   - waiting for locator("//a[text()='Create Account']")
-      
-      	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-      	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-      	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-      	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-      	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
-      	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-      	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-      	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-      	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-      	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
-      	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
-      	at com.microsoft.playwright.Locator.click(Locator.java:2508)
-      	at com.rainbird.utils.Actions.Click(Actions.java:9)
-      	at com.rainbird.step_definitions.Step_definition.user_click_create_an_account(Step_definition.java:22)
-      	at ✽.User click Create an account(file:///C:/Users/hi/Desktop/EERP_Internal_Auto_testing/com.rainbird/src/test/resources/Feature/Register.feature:4)
-      Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-        message='Target page, context or browser has been closed
-        name='TargetClosedError
-        stack='TargetClosedError:Target page, context or browser has been closed
-      Error
-          at captureRawStack (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\stackTrace.js:36:17)
-          at LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:89:52)
-          at LongStandingScope.race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:82:17)
-          at C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:43
-          at Array.map (<anonymous>)
-          at LongStandingScope.raceMultiple (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:79:32)
-          at Frame.retryWithProgressAndTimeouts (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:931:40)
-          at async C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\frames.js:1023:29
-          at async ProgressController.run (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\progress.js:79:22)
-          at async FrameDispatcher.click (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\frameDispatcher.js:157:12)
-          at async LongStandingScope._race (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\utils\isomorphic\manualPromise.js:94:14)
-          at async FrameDispatcher._handleCommand (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:98:14)
-          at async DispatcherConnection.dispatch (C:\Users\hi\AppData\Local\Temp\playwright-java-11100563983435537482\package\lib\server\dispatchers\dispatcher.js:366:22)
-      }
-      Call log:
-      -   - waiting for locator("//a[text()='Create Account']")
-      
-      	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-      	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-      	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-      	... 14 more&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser is navigated to Term of licence page&amp#27;[0m            &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_is_navigated_to_term_of_licence_page()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser read and click consent checkbox&amp#27;[0m                 &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_read_and_click_consent_checkbox()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser is navigated to Registration page&amp#27;[0m               &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_is_navigated_to_registration_page()&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser fills out registration form&amp#27;[0m                    &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_fills_out_registration_form()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser click Required field checkbox&amp#27;[0m                   &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_click_required_field_checkbox()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser click Register button&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.Step_definition.u_ser_click_register_button()&amp#27;[0m
+Scenario Outline: User access page and start to register an account                               &amp#27;[90m# src/test/resources/Feature/Register.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser access to page&amp#27;[0m                                                                       &amp#27;[90m# com.rainbird.step_definitions.Step_definition.user_access_to_page()&amp#27;[0m
+CREATE ACCOUNT link text is VISIBLE
+CREATE ACCOUNT link text is CLICKABLE
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click CREATE ACCOUNT&amp#27;[0m                                                                  &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_click_create_an_account()&amp#27;[0m
+User is NAVIGATED to Term of licence page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Term of licence page&amp#27;[0m                                                  &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_is_navigated_to_term_of_licence_page()&amp#27;[0m
+Checkbox is VISIBLE
+Checkbox is CLICKABLE
+Checkbox is CLICKED
+ACCEPT button is CLICKABLE
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser read and click consent checkbox&amp#27;[0m                                                       &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_read_and_click_consent_checkbox()&amp#27;[0m
+User is NAVIGATED to Registration page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Registration page&amp#27;[0m                                                     &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_is_navigated_to_registration_page()&amp#27;[0m
+SELECT COUNTRY label is VISIBLE
+SELECT COUNTRY field is CLICKABLE
+STATE label is VISIBLE
+STATE field is DISABLED when United States is UNSELECTED
+TIMEZONE label is VISIBLE
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"Vietnam"&amp#27;[0m&amp#27;[32m as Country and &amp#27;[0m&amp#27;[32m&amp#27;[1m"SE Asia Standard Time"&amp#27;[0m&amp#27;[32m as Timezone and &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m as State&amp#27;[0m &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_country_timezone_and_state(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+[Account name: demotesting, Address: 123 ABC DEF]
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"demotesting"&amp#27;[0m&amp#27;[32m as Account Name and &amp#27;[0m&amp#27;[32m&amp#27;[1m"123 ABC DEF"&amp#27;[0m&amp#27;[32m as Address&amp#27;[0m                    &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_account_name_and_address(java.lang.String,java.lang.String)&amp#27;[0m
+[Account name: demotesting, Address: 123 ABC DEF, City: ghi]
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"ghi"&amp#27;[0m&amp#27;[32m as City and &amp#27;[0m&amp#27;[32m&amp#27;[1m"55000"&amp#27;[0m&amp#27;[32m as Postal Code&amp#27;[0m                                      &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_city_and_postal_code(java.lang.String,java.lang.String)&amp#27;[0m
+[Account name: demotesting, Address: 123 ABC DEF, City: ghi, Contact name: demotesting user, Phone number: 0123456789]
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"demotesting user"&amp#27;[0m&amp#27;[32m as Contact Name and &amp#27;[0m&amp#27;[32m&amp#27;[1m"0123456789"&amp#27;[0m&amp#27;[32m as Phone Number&amp#27;[0m           &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_contact_name_and_phone_number(java.lang.String,java.lang.String)&amp#27;[0m
+[Account name: demotesting, Address: 123 ABC DEF, City: ghi, Contact name: demotesting user, Phone number: 0123456789, Email: duczo181818@gmail.com, Confirm email: duczo181818@gmail.com]
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"duczo181818@gmail.com"&amp#27;[0m&amp#27;[32m as Email and &amp#27;[0m&amp#27;[32m&amp#27;[1m"duczo181818@gmail.com"&amp#27;[0m&amp#27;[32m as Confirm Email&amp#27;[0m &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_email_and_confirm_email(java.lang.String,java.lang.String)&amp#27;[0m
+[Account name: demotesting, Address: 123 ABC DEF, City: ghi, Contact name: demotesting user, Phone number: 0123456789, Email: duczo181818@gmail.com, Confirm email: duczo181818@gmail.com, Username: demotesting]
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"demotesting"&amp#27;[0m&amp#27;[32m as User Name&amp#27;[0m                                                    &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_username(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out &amp#27;[0m&amp#27;[32m&amp#27;[1m"123321123@Qq"&amp#27;[0m&amp#27;[32m as Password and &amp#27;[0m&amp#27;[32m&amp#27;[1m"123321123@Qq"&amp#27;[0m&amp#27;[32m as Confirm Password&amp#27;[0m             &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_fill_out_password_and_confirm_password(java.lang.String,java.lang.String)&amp#27;[0m
+Required field checkbox is not CHECKED before CLICKED
+Required field checkbox is CHECKED àter CLICKED
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click Required field checkbox&amp#27;[0m                                                         &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_click_required_field_checkbox()&amp#27;[0m
+Register button is CLICKABLE
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser click Register button&amp#27;[0m                                                                  &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.u_ser_click_register_button()&amp#27;[0m
+User is NOT navigated to Email Verification page
+Confirm with Email is INVISIBLE
+Confirm Instruction is INVISIBLE
+Resend Request is INVISIBLE
+Resend button NOT FOUND
+Resend button is CLICKABLE
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should be navigated to Email Verification page&amp#27;[0m                                        &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_should_be_navigated_to_email_verification_page()&amp#27;[0m
+Observing
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser access to Email page&amp#27;[0m                                                                 &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_access_to_email_page()&amp#27;[0m
+Observing
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser follow steps and confirm Email address&amp#27;[0m                                                &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_follow_steps_and_confirm_email_address()&amp#27;[0m
+Hello
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is redirected to page&amp#27;[0m                                                                 &amp#27;[90m# com.rainbird.step_definitions.Step_definition_register.user_is_redirected_to_page()&amp#27;[0m
 ]]></system-out>
   </testcase>
 </testsuite>

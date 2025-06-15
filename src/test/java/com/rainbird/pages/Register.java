@@ -1,21 +1,17 @@
 package com.rainbird.pages;
 
+import com.microsoft.playwright.Page;
+import com.rainbird.playwright_config.Playwright_Config;
+
 public class Register {
-    public static class Register_miscellaneous_section {
-    //LOGO
-    public final String top_logo = "//img[@class='rainbird-app-logo']";
-    public final String bottom_logo = "//div[@class='footer-left']";
-    //PAGE TITLE
-    public final String registration_title_image = "//div[@class='header-right']";
-    public final String registration_title_text = "//div[@class='header-right']//span[text()='Create New Account']";
-    public final String registration_right = "//div[@class='footer-left']";
-    //REGISTRATION FORM
-    public
- final String registration_header = "//h2[contains(@class,'pageHeader')]";
-    public
- final String registration_info = "//p[@class='page-info']";
-    }
-    public static class Register_Account_Information{
+        //LOGO
+        public final String top_logo = "//div[@class='header-logo']/img";
+        public final String bottom_logo = "//div[@class='footer-left']/img";
+        public final String registration_title_image = "//div[@class='header-right']";
+        public final String registration_title_text = "//div[@class='header-right']/span[text()='Create New Account']";
+        public final String registration_rights = "//div[@class='footer-right']";
+
+    public static class Account_Information{
 
         //ACCOUNT INFORMATION FILLING SECTIONS
             //LABEL OF FIELD
@@ -26,14 +22,21 @@ public class Register {
         public final String city_label = "//label[@class='control-label required' and @for='City']";
         public final String postal_code_label = "//label[@class='control-label required' and @for='Zip']";
         public final String state_label = "//label[@class='control-label required' and @for='State']";
-
+        public final String header = "//h2[contains(@class,'pageHeader')]";
+        public final String info = "//p[@class='page-info']";
             //INPUT FIELD
+        public final String select_country = "//select[@id='country-select']";
+        public final String select_timezone = "//select[@id='TimeZoneId']";
         public final String account_name = "//input[@id='Name']";
         public final String account_name_tooltip = "//i[@class='icon icon-icon-info']";
         public final String address = "//input[@id='Address']";
         public final String city = "//input[@id='City']";
         public final String postal_code = "//input[@id='Zip']";
         public final String state = "//select[@id='state-dropdown']";
+            //BUTTON
+        public final String required_field_consent_checkbox= "//input[@id='ReceiveMarketingMsg']";
+        public final String cancel_button = "//input[@type='button' and @value='Cancel']";
+        public final String register_button = "//input[@type='submit' and @value='Register']";
 
             //SELECT COUNTRY BY VALUE ATTRIBUTE
         /**
@@ -41,21 +44,21 @@ public class Register {
         * Interact with <option> tag by using VALUE
         * The parameter must be TWO CHARACTERS
         */
-        public static String select_Country_by_value(String country_value){
+        public String select_Country_by_value(String country_value){
             return  "//select[@id='country-select']/option[@value='" + country_value +"']";
         }
         //SELECT COUNTRY WITH EXACT LANGUAGE
 
-        public static String select_Country_by_text(String language){
+        public String select_Country_by_text(String language){
             return "//select[@id='country-select']/option[text()='" + language + "']";
         }
 
         //SELECT TIMEZONE BY VALUE ATTRIBUTE
-        public static String select_Timezone_by_value(String timezone){
+        public String select_Timezone_by_value(String timezone){
             return "//select[@id='TimeZoneId']/option[@value='" + timezone  + " Standard Time']";
         }
     }
-    public static class Register_Contact_and_Login_Information{
+    public static class Contact_and_Login_Information{
 
         //LABEL OF FIELD
         public final String contact_name_label = "//label[@for='ContactName']";
@@ -89,7 +92,7 @@ public class Register {
         //CONFIRM PASSWORD SECTION
         public final String confirm_password_error = "//div[@id='confirm-password-error']";
     }
-    public static class Register_Preferences{
+    public static class Preferences{
         //LABEL OF FIELD
         public final String select_language_label = "//label[@for='CultureId']";
         public final String select_unit_of_volume_label = "//label[@for='UnitsId']";
@@ -105,9 +108,7 @@ public class Register {
         public final String select_unit_of_area = "//select[@id='AreaFormat']";
         public final String select_date_of_format = "//select[@id='DateFormatId']";
         public final String select_time_format = "//select[@id='TimeFormatId']";
-        public final String required_field_consent_checkbox= "//input[@id='ReceiveMarketingMsg']";
-        public final String cancel_button = "//input[@type='button' and @value='Cancel']";
-        public final String register_button = "//input[@type='submit' and @value='Register']";
+
 
          /**
           * SELECT LANGUAGE WITH LANGUAGE NUMBER:
@@ -165,6 +166,43 @@ public class Register {
          * */
         public static String select_Time_Format(int time_format_value_number){
             return "//select[@id='TimeFormatId']/option[@value='" + time_format_value_number + "']";
+        }
+    }
+    public static class Terms_of_license{
+        //LOGO
+        public final String logo = "//img[@class='rainbird-app-logo']";
+        //PAGE TITLE
+        public final String title_image = "//div[@class='header-right']";
+        public final String title_text = "//div[@class='header-right']//span[text()='Create New Account']";
+        public final String term_of_licence_content = "//div[@class='license-content text-regular']";
+        //LANGUAGE SELECTION
+        public final String language_selection_label = "//label[text()='Change Language']";
+        public final String language_selection = "//select[@id='language']";
+        public final String english = "//option[text()='English']";
+        public final String french = "//option[text()='français']";
+        public final String italian = "//option[text()='italiano']";
+        public final String portuguese  = "//option[text()='portuguese']";
+        public final String german = "//option[text()='Deutsche']";
+        public final String spanish = "//option[text()='Español']";
+        //CHECKBOX INSTRUCTION
+        public final String checkbox_instruction = "//span[text()='Click the checkbox to accept the terms of the License Agreement:']";
+        //TERM OF LICENSE AGREEMENT
+        public final String terms_agreement_checkbox = "//input[@id='required-checkbox']";
+        public final String user_consent = "//span[text()='I accept Rain Bird’s license']";
+        //ACCEPT BUTTON
+        public final String accept_button = "//input[@id='accept-button']";
+    }
+    public static class Email_Verification{
+        public final String title = "//div[@class='title']/span[text()='Verify Your Email Address']";
+        public final String confirm_with_email = "//div[@class='confirm-content d-flex flex-column']/span[1]";
+        public final String confirm_instruction = "//div[@class='confirm-content d-flex flex-column']/span[2]";
+        public final String resend_request = "//div[contains(@class,'resend-content')]/span[text()='If you still don’t see it, resend the confirmation email']";
+        public final String resend_button = "//a[text()='Resend email']";
+
+        public String Email_verified(){
+            Page page = Playwright_Config.getPage();
+            String confirm_content = page.locator(confirm_with_email).textContent().substring(25);
+            return confirm_content.replaceAll(" to confirm the validity of your email address.","");
         }
     }
 }
