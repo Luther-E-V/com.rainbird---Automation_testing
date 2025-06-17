@@ -1,20 +1,20 @@
-package com.rainbird.pages;
+package com.rainbird.pages.register_page;
 
 import com.microsoft.playwright.Page;
 import com.rainbird.playwright_config.Playwright_Config;
 
 public class Register {
-        //LOGO
-        public final String top_logo = "//div[@class='header-logo']/img";
-        public final String bottom_logo = "//div[@class='footer-left']/img";
-        public final String registration_title_image = "//div[@class='header-right']";
-        public final String registration_title_text = "//div[@class='header-right']/span[text()='Create New Account']";
-        public final String registration_rights = "//div[@class='footer-right']";
+    //LOGO
+    public final String top_logo = "//div[@class='header-logo']/img";
+    public final String bottom_logo = "//div[@class='footer-left']/img";
+    public final String registration_title_image = "//div[@class='header-right']";
+    public final String registration_title_text = "//div[@class='header-right']/span[text()='Create New Account']";
+    public final String registration_rights = "//div[@class='footer-right']";
 
     public static class Account_Information{
 
         //ACCOUNT INFORMATION FILLING SECTIONS
-            //LABEL OF FIELD
+        //LABEL OF FIELD
         public final String select_country_label = "//label[@class ='control-label required' and text()='Select Country']";
         public final String select_timezone_label = "//label[@class='control-label required' and @for='TimeZone']";
         public final String account_name_label = "//label[@class='control-label required' and @for='Name']";
@@ -24,7 +24,7 @@ public class Register {
         public final String state_label = "//label[@class='control-label required' and @for='State']";
         public final String header = "//h2[contains(@class,'pageHeader')]";
         public final String info = "//p[@class='page-info']";
-            //INPUT FIELD
+        //INPUT FIELD
         public final String select_country = "//select[@id='country-select']";
         public final String select_timezone = "//select[@id='TimeZoneId']";
         public final String account_name = "//input[@id='Name']";
@@ -33,29 +33,29 @@ public class Register {
         public final String city = "//input[@id='City']";
         public final String postal_code = "//input[@id='Zip']";
         public final String state = "//select[@id='state-dropdown']";
-            //BUTTON
+        //BUTTON
         public final String required_field_consent_checkbox= "//input[@id='ReceiveMarketingMsg']";
         public final String cancel_button = "//input[@type='button' and @value='Cancel']";
         public final String register_button = "//input[@type='submit' and @value='Register']";
 
-            //SELECT COUNTRY BY VALUE ATTRIBUTE
+        //SELECT COUNTRY BY VALUE ATTRIBUTE
         /**
         * SELECT COUNTRY BY VALUE ATTRIBUTE:
         * Interact with <option> tag by using VALUE
         * The parameter must be TWO CHARACTERS
         */
-        public String select_Country_by_value(String country_value){
-            return  "//select[@id='country-select']/option[@value='" + country_value +"']";
+        public String Select_country_by_index_value(int value_index){
+            return  "//select[@id='country-select']/option[" + value_index +"]";
         }
         //SELECT COUNTRY WITH EXACT LANGUAGE
 
-        public String select_Country_by_text(String language){
+        public String Select_country_by_text_value(String language){
             return "//select[@id='country-select']/option[text()='" + language + "']";
         }
 
         //SELECT TIMEZONE BY VALUE ATTRIBUTE
-        public String select_Timezone_by_value(String timezone){
-            return "//select[@id='TimeZoneId']/option[@value='" + timezone  + " Standard Time']";
+        public String Select_timezone_by_index_value(int value_index){
+            return "//select[@id='TimeZoneId']/option[" + value_index  + "]";
         }
     }
     public static class Contact_and_Login_Information{
@@ -110,6 +110,21 @@ public class Register {
         public final String select_time_format = "//select[@id='TimeFormatId']";
 
 
+        public String Select_language_by_index_value(int value_index){
+            return  "//select[@id='language-select']/option[" + value_index +"']";
+        }
+        public String Select_unit_volume_by_index_value(int value_index){
+            return  "//select[@id='UnitsId']/option[" + value_index +"']";
+        }
+        public String Select_unit_area_by_index_value(int value_index){
+            return  "//select[@id='AreaFormat']/option[" + value_index +"']";
+        }
+        public String Select_date_format_by_index_value(int value_index){
+            return  "//select[@id='DateFormatId']/option[" + value_index +"']";
+        }
+        public String Select_time_format_by_index_value(int value_index){
+            return  "//select[@id='TimeFormatId']/option[" + value_index +"']";
+        }
          /**
           * SELECT LANGUAGE WITH LANGUAGE NUMBER:
           * - 1031 : GERMAN
@@ -124,7 +139,7 @@ public class Register {
           * - 2070 : PORTUGUESE
           * - 3082 : SPANISH
           * */
-        public static String select_Language(int language_number){
+        public static String Select_language_by_text_value(int language_number){
             return "//select[@id='language-select']/option[@value='" + language_number +"']";
         }
         /**
@@ -134,7 +149,7 @@ public class Register {
          * - 3 : Metric 3: (L/min)
          * - 0 : U.S.: (gal/min)
          * */
-        public static String select_Unit_of_Volume(int unit_of_volume_value_number){
+        public static String Select_unit_of_volume_by_text_value(int unit_of_volume_value_number){
             return "//select[@id='UnitsId']/option[@value='" + unit_of_volume_value_number +"']";
         }
         /**
@@ -143,7 +158,7 @@ public class Register {
          * - 2 : m²
          * - 0 : ft²
          * */
-        public static String select_Unit_of_Area(int unit_of_area_value_number){
+        public static String Select_unit_of_Area_by_text_value(int unit_of_area_value_number){
             return "//select[@id='AreaFormat']/option[@value='"+ unit_of_area_value_number +"']";
         }
         /**
@@ -156,7 +171,7 @@ public class Register {
          * - 5 : DD.MM.YYYY
          * - 6 : YYYY/MM/DD
          * */
-        public static String select_Date_Format(int date_format_value_number){
+        public static String Select_date_Format_by_text_value(int date_format_value_number){
             return "//select[@id='DateFormatId']/option[@value='" + date_format_value_number +"']";
         }
         /**
@@ -164,7 +179,7 @@ public class Register {
          * - 0 : AM / PM
          * - 1 : 24 Hours
          * */
-        public static String select_Time_Format(int time_format_value_number){
+        public static String Select_time_Format_by_text_value(int time_format_value_number){
             return "//select[@id='TimeFormatId']/option[@value='" + time_format_value_number + "']";
         }
     }
@@ -176,8 +191,8 @@ public class Register {
         public final String title_text = "//div[@class='header-right']//span[text()='Create New Account']";
         public final String term_of_licence_content = "//div[@class='license-content text-regular']";
         //LANGUAGE SELECTION
-        public final String language_selection_label = "//label[text()='Change Language']";
-        public final String language_selection = "//select[@id='language']";
+        public final String select_language_label = "//label[text()='Change Language']";
+        public final String select_language = "//select[@id='language']";
         public final String english = "//option[text()='English']";
         public final String french = "//option[text()='français']";
         public final String italian = "//option[text()='italiano']";
@@ -199,7 +214,7 @@ public class Register {
         public final String resend_request = "//div[contains(@class,'resend-content')]/span[text()='If you still don’t see it, resend the confirmation email']";
         public final String resend_button = "//a[text()='Resend email']";
 
-        public String Email_verified(){
+        public String Verified_email(){
             Page page = Playwright_Config.getPage();
             String confirm_content = page.locator(confirm_with_email).textContent().substring(25);
             return confirm_content.replaceAll(" to confirm the validity of your email address.","");

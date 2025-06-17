@@ -1,8 +1,8 @@
-package com.rainbird.pages;
+package com.rainbird.pages.login_page;
 
-public class Login_page {
+public class Login {
     //Logo
-    public final String logon = "//img[@class='profile-img-card']";
+    public final String login = "//img[@class='profile-img-card']";
 
     //USERNAME & PASSWORD
     public final String username = "//input[@id='userName']";

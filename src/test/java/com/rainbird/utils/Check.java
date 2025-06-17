@@ -33,7 +33,8 @@ public class Check {
         return page.locator(xpath).isChecked();
     }
 
-    public void Result_evaluation_check(boolean result, String value_if_true, String value_if_false){
+    public void Result_evaluation(boolean result, String value_if_true, String value_if_false){
         System.out.println((result)? value_if_true : value_if_false);
     }
+
 }

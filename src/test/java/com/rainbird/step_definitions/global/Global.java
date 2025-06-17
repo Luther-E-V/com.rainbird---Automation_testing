@@ -1,12 +1,9 @@
-package com.rainbird.step_definitions;
+package com.rainbird.step_definitions.global;
 
-import com.rainbird.utils.*;
 import com.rainbird.playwright_config.Playwright_Config;
 import io.cucumber.java.en.Given;
 
-public class Step_definition {
-
-    Check check = new Check();
+public class Global {
 
     @Given("User access to page")
     public void user_access_to_page() {
@@ -15,4 +12,5 @@ public class Step_definition {
             Playwright_Config.Navigation();
         } catch (InterruptedException e){}
     }
+
 }

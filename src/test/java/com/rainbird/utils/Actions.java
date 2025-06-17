@@ -6,21 +6,19 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class Actions {
-    private static ArrayList<String> user_register_information = new ArrayList<>();
-    public Page page = Playwright_Config.getPage();
 
-    public void getUser_register_information(){
-        System.out.println(user_register_information); ;
-    }
+    public Page page = Playwright_Config.getPage();
 
     public void Click(String xpath){
         page.locator(xpath).click();
     }
 
-    public void Select(String xpath, String... option_value){
+    public void Select(String xpath, String option_value){
         page.locator(xpath).selectOption(option_value);
     }
-
+    public void Select_random_option(String xpath){
+        page.locator(xpath).click();
+    }
     public void Hover(String xpath){
         page.locator(xpath).hover();
     }
@@ -33,14 +31,5 @@ public class Actions {
         page.locator(xpath).fill(input_value);
     }
 
-    public void Retrieve_value_input(String xpath,String section){
-        String value_input = page.locator(xpath).inputValue();
-        String user_information = section + ": " + value_input;
-        user_register_information.add(user_information);
-    }
-    public void Retrieve_selected_option_text(String xpath,String section){
-        String option_text = (String) page.locator(xpath).evaluate("sel => sel.options[sel.selectedIndex].innerText");
-        String user_information = section + ": " + option_text;
-        user_register_information.add(user_information);
-    }
+
 }
