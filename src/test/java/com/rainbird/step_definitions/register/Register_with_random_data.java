@@ -1,11 +1,11 @@
 package com.rainbird.step_definitions.register;
 
 import com.rainbird.pages.login_page.Login;
-import com.rainbird.pages.register_page.Generate_random_value;
+import com.rainbird.utils.custom_data.Generate_random_value;
 import com.rainbird.pages.register_page.Register;
-import com.rainbird.utils.Actions;
-import com.rainbird.utils.Check;
-import com.rainbird.utils.Processor;
+import com.rainbird.utils.actions.Actions;
+import com.rainbird.utils.check.Check;
+import com.rainbird.utils.processor.Processor;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
@@ -17,7 +17,7 @@ public class Register_with_random_data {
     Register.Terms_of_license license = new Register.Terms_of_license();
     Register.Contact_and_Login_Information register_login = new Register.Contact_and_Login_Information();
     Register.Email_Verification verification = new Register.Email_Verification();
-    Generate_random_value random_value = new Generate_random_value();
+    Generate_random_value random = new Generate_random_value();
     Actions action = new Actions();
     Check check = new Check();
     Processor processor = new Processor();
@@ -25,7 +25,7 @@ public class Register_with_random_data {
 
     @When("User fill out Country")
     public void user_fill_out_country(){
-        String country_random_value_xpath = random_value.Random_country_option_xpath();
+        String country_random_value_xpath = random.Random_country_option_xpath();
         String option_value = processor.Get_selected_option_text(country_random_value_xpath);
         try {
             Thread.sleep(1000);
@@ -44,21 +44,19 @@ public class Register_with_random_data {
     }
     @And("User fill out Timezone")
     public void timezone(String timezone){
-        String timezone_random_value_xpath = random_value.Random_timezone_option_xpath();
         try {
             Thread.sleep(1000);
             check.Result_evaluation(check.Visibility_check(account_infor.select_timezone_label),"TIMEZONE label is VISIBLE","TIMEZONE label is INVISIBLE");
             Thread.sleep(1000);
-            action.Select_random_option(timezone_random_value_xpath);
+            action.Select_random_option(random.Random_timezone_option_xpath());
         } catch (InterruptedException e){}
     }
 
     @And("User fill out Account Name")
-    public void user_fill_out_account_name(String account_name){
-        String account_name_random_value_xpath = random_value.
+    public void user_fill_out_account_name(){
         try {
             Thread.sleep(1000);
-            action.Fill_in(account_infor.account_name,account_name);
+            action.Fill_in(account_infor.account_name,random.Random_valid_username());
             processor.Retrieve_value_input(account_infor.account_name,"Account name");
         } catch (InterruptedException e){}
     }

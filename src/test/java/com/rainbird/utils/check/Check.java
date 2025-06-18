@@ -1,4 +1,4 @@
-package com.rainbird.utils;
+package com.rainbird.utils.check;
 
 import com.microsoft.playwright.Page;
 import com.rainbird.playwright_config.Playwright_Config;

@@ -4,15 +4,11 @@ import com.microsoft.playwright.Page;
 import com.rainbird.pages.login_page.Login;
 import com.rainbird.pages.register_page.Register;
 import com.rainbird.playwright_config.Playwright_Config;
-import com.rainbird.utils.Actions;
-import com.rainbird.utils.Check;
-import com.rainbird.utils.Processor;
+import com.rainbird.utils.actions.Actions;
+import com.rainbird.utils.check.Check;
+import com.rainbird.utils.processor.Processor;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import static com.rainbird.playwright_config.Playwright_Config.getPage;
 
 public class Register_with_customize_data {
 

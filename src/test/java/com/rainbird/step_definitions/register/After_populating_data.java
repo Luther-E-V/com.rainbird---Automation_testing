@@ -1,12 +1,9 @@
 package com.rainbird.step_definitions.register;
 
-import com.microsoft.playwright.Page;
 import com.rainbird.pages.register_page.Register;
-import com.rainbird.playwright_config.Playwright_Config;
-import com.rainbird.utils.Actions;
-import com.rainbird.utils.Check;
+import com.rainbird.utils.actions.Actions;
+import com.rainbird.utils.check.Check;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

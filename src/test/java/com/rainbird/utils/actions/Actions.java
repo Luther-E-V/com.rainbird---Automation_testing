@@ -1,9 +1,8 @@
-package com.rainbird.utils;
+package com.rainbird.utils.actions;
 
 import com.microsoft.playwright.Page;
 import com.rainbird.playwright_config.Playwright_Config;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 
 public class Actions {
 
