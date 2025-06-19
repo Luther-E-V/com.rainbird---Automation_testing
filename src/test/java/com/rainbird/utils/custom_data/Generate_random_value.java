@@ -1,46 +1,17 @@
 package com.rainbird.utils.custom_data;
 
 import com.github.javafaker.Faker;
-import com.rainbird.pages.register_page.Register;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Generate_random_value {
 
     Random random = new Random();
-    Register.Account_Information account_information = new Register.Account_Information();
-    Register.Preferences preferences = new Register.Preferences();
-    Register.Terms_of_license license = new Register.Terms_of_license();
     Faker fake = new Faker();
-
-    public String Random_country_option_xpath(){
-        int random_index = random.nextInt(1,141);
-        return account_information.Select_country_by_index_value(random_index);
-    }
-    public String Random_timezone_option_xpath(){
-        int random_index = random.nextInt(1,143);
-        return account_information.Select_timezone_by_index_value(random_index);
-    }
-    public String Random_language_option_xpath(){
-        int random_index = random.nextInt(1,13);
-        return preferences.Select_language_by_index_value(random_index);
-    }
-    public String Random_unit_volume_option_xpath(){
-        int random_index = random.nextInt(1,6);
-        return preferences.Select_unit_volume_by_index_value(random_index);
-    }
-    public String Random_unit_area_option_xpath(){
-        int random_index = random.nextInt(1,5);
-        return preferences.Select_unit_area_by_index_value(random_index);
-    }
-    public String Random_date_format_option_xpath(){
-        int random_index = random.nextInt(1,9);
-        return preferences.Select_date_format_by_index_value(random_index);
-    }
-    public String Random_time_format_option_xpath(){
-        int random_index = random.nextInt(1,4);
-        return preferences.Select_time_format_by_index_value(random_index);
-    }
 
     public String Random_valid_username(){
         return fake.name().username();
@@ -51,26 +22,53 @@ public class Generate_random_value {
     public String Random_city(){
         return fake.address().city();
     }
-    public String Random_zipcode(){
+    public String Random_postal_code(){
         return fake.address().zipCode();
     }
     public String Random_contact_name(){
         return fake.name().name();
     }
+    public String Random_phone_number(){
+        return fake.phoneNumber().phoneNumber().replaceAll("\\D","");
+    }
     public String Random_valid_password(){
-        return fake.internet().password(8,15,true,true,true);
-    }
-    public String Random_full_character_password(int minimum_length,int maximum_length,boolean... extra){
+        List<Character> lowercase_letter = new ArrayList<>();
+        List<Character> uppercase_letter = new ArrayList<>();
+        List<Character> number = new ArrayList<>();
+        List<Character> special_character = new ArrayList<>();
+        List<Character> master_list = new ArrayList<>();
+        String special_char = " !@#$%^&*()_+-=[]{}|;:'\",.<>?/\\`~";
+        int password_length = random.nextInt(8,16);
 
-        if (minimum_length == 0 || maximum_length == 0 || extra.length == 0){
-            return fake.internet().password();
+        //GENERATE ABOVE LISTS
+        for (char c = 'a';c<='z';c++) lowercase_letter.add(c);
+        for (char c = 'A';c<='Z';c++) uppercase_letter.add(c);
+        for (char numb = '0';numb<='9';numb++) number.add(numb);
+        for (char c: special_char.toCharArray()) special_character.add(c);
+
+        //GENERATE PASSWORD
+        master_list.addAll(lowercase_letter);
+        master_list.addAll(uppercase_letter);
+        master_list.addAll(number);
+        //ENSURE VALID PASSWORD ALWAYS INCLUDE 1 SPECIAL CHARACTER
+        List<Character> valid_password_list = new ArrayList<>();
+        StringBuilder password = new StringBuilder();
+        valid_password_list.add(lowercase_letter.get(random.nextInt(lowercase_letter.size())));
+        valid_password_list.add(uppercase_letter.get(random.nextInt(uppercase_letter.size())));
+        valid_password_list.add(number.get(random.nextInt(number.size())));
+        valid_password_list.add(special_character.get(random.nextInt(special_character.size())));
+        //ADD MORE CHARACTER ACCORDING TO THE EXPECTED LENGTH OF PASSWORD
+        for (int length=0;length<=password_length-1;length++){
+            valid_password_list.add(master_list.get(random.nextInt(master_list.size())));
+            if (valid_password_list.size()==password_length)
+                break;
         }
-        else if (extra.length == 1){
-            return fake.internet().password(minimum_length,maximum_length,extra[0]);
-        }else{
-            return fake.internet().password(minimum_length,maximum_length,true,true,true);
+        for (int index=0;index<=valid_password_list.size()-1;index++) {
+            password.append(valid_password_list.get(index));
         }
+        return password.toString();
     }
+
 //    public String Random_account_name_option_xpath(int number_lowercase_letter, int number_uppercase_letter, int numb_number,int spec_char){
 //        List<Character> lowercase_letter = new ArrayList<>();
 //        List<Character> uppercase_letter = new ArrayList<>();

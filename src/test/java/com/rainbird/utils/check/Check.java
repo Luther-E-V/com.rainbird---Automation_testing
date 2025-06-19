@@ -34,7 +34,7 @@ public class Check {
     }
 
     public void Result_evaluation(boolean result, String value_if_true, String value_if_false){
-        System.out.println((result)? value_if_true : value_if_false);
+        System.out.println((result)? "  - " + value_if_true : "  - " + value_if_false);
     }
 
 }

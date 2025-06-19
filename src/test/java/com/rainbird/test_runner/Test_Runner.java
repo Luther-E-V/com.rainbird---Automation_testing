@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-                features = "src/test/resources/Features",
+                features = "src/test/resources/Features/register",
                 glue = {"com.rainbird.step_definitions","com.rainbird.hook"},
-                plugin = {"pretty","html:target/REPORT/Register.feature.html"}
+                plugin = {"pretty","html:target/REPORT/Register_with_customized_data.feature.html"}
 )
 public class Test_Runner {
 }

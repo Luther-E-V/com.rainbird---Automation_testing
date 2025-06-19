@@ -1,4 +1,4 @@
-package com.rainbird.step_definitions.register;
+package com.rainbird.step_definitions.register.register_with_customized_data;
 
 import com.microsoft.playwright.Page;
 import com.rainbird.pages.login_page.Login;
@@ -10,7 +10,7 @@ import com.rainbird.utils.processor.Processor;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
-public class Register_with_customize_data {
+public class Register_with_customized_data {
 
     Page page = Playwright_Config.getPage();
     Login login = new Login();
@@ -27,22 +27,22 @@ public class Register_with_customize_data {
     public void user_fill_out_country(String country){
         try {
             Thread.sleep(1000);
+            System.out.println("* SELECT COUNTRY field:");
             check.Result_evaluation(check.Visibility_check(account_infor.select_country_label),"SELECT COUNTRY label is VISIBLE","SELECT COUNTRY label is INVISIBLE");
             check.Result_evaluation(check.Availability_check(account_infor.select_country),"SELECT COUNTRY field is CLICKABLE","SELECT COUNTRY field is DISABLED");
             Thread.sleep(1000);
-            check.Result_evaluation(check.Visibility_check(account_infor.state_label),"STATE label is VISIBLE","STATE label is INVISIBLE");
-            check.Result_evaluation(check.Availability_check(account_infor.state),"STATE field should not be CLICKABLE before United States is selected","STATE field is DISABLED when United States is UNSELECTED");
+            System.out.println("* SELECT STATE field:");
+            check.Result_evaluation(check.Visibility_check(account_infor.select_state_label),"STATE label is VISIBLE","STATE label is INVISIBLE");
+            check.Result_evaluation(check.Availability_check(account_infor.select_state),"STATE field should not be CLICKABLE before United States is selected","STATE field is DISABLED when United States is UNSELECTED");
             Thread.sleep(1000);
             action.Select(account_infor.select_country,country);
-            if (country.equalsIgnoreCase("united states")){
-                check.Result_evaluation(check.Availability_check(account_infor.state),"STATE field should be CLICKABLE when SELECT COUNTRY is \"United States\"","STATE field should be DISABLED when SELECT COUNTRY is not \"United States\"");
-            }
         } catch (InterruptedException e){}
     }
     @And("User fill out {string} as Timezone")
     public void timezone(String timezone){
         try {
             Thread.sleep(1000);
+            System.out.println("* SELECT TIMEZONE field:");
             check.Result_evaluation(check.Visibility_check(account_infor.select_timezone_label),"TIMEZONE label is VISIBLE","TIMEZONE label is INVISIBLE");
             Thread.sleep(1000);
             action.Select(account_infor.select_timezone,timezone);
@@ -86,8 +86,9 @@ public class Register_with_customize_data {
             String country_option_value = processor.Get_selected_option_text(account_infor.select_country);
             if (country_option_value.equalsIgnoreCase("united states")){
                 Thread.sleep(1000);
-                check.Result_evaluation(check.Availability_check(account_infor.state),"STATE field should be CLICKABLE when SELECT COUNTRY is \"United States\"","STATE field should be DISABLED when SELECT COUNTRY is not \"United States\"");
-                action.Select(account_infor.state, state);
+                System.out.println("* SELECT STATE field:");
+                check.Result_evaluation(check.Availability_check(account_infor.select_state),"STATE field should be CLICKABLE when SELECT COUNTRY is \"United States\"","STATE field should be DISABLED when SELECT COUNTRY is not \"United States\"");
+                action.Select(account_infor.select_state, state);
             }
             action.Screenshot("Account_Information_Section");
         } catch (InterruptedException e) {
@@ -125,19 +126,11 @@ public class Register_with_customize_data {
             processor.Retrieve_value_input(register_login.confirm_email,"Confirm email");
         } catch (InterruptedException e){}
     }
-    @And("User fill out {string} as User Name")
-    public void user_fill_out_username(String username){
-        try {
-            Thread.sleep(1000);
-            action.Fill_in(register_login.username,username);
-            processor.Retrieve_value_input(register_login.username,"Username");
-        } catch (InterruptedException e){}
-    }
     @And("User fill out {string} as Password")
     public void user_fill_out_password(String password){
         try {
             Thread.sleep(1000);
-            action.Fill_in(register_login.password,"Demotesting131313@");
+            action.Fill_in(register_login.password,password);
             processor.Retrieve_value_input(register_login.password,"Password");
             Thread.sleep(1000);
             check.Availability_check(register_login.password_eye_icon_on);
@@ -148,12 +141,13 @@ public class Register_with_customize_data {
     public void user_fill_out_confirm_password(String confirm_password){
         try {
             Thread.sleep(1000);
-            action.Fill_in(register_login.confirm_password,"Demotesting131313@");
+            action.Fill_in(register_login.confirm_password,confirm_password);
             processor.Retrieve_value_input(register_login.confirm_password,"Confirm password");
             Thread.sleep(1000);
             check.Availability_check(register_login.confirm_password_eye_icon_on);
             action.Click(register_login.confirm_password_eye_icon_on);
             Thread.sleep(1000);
+            System.out.println("* User's account information:\n" + " ");
             processor.Get_user_register_information();
             action.Screenshot("Contact and Login Information");
         } catch (InterruptedException e){}

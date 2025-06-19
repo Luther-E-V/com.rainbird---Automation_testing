@@ -2,6 +2,7 @@ package com.rainbird.pages.register_page;
 
 import com.microsoft.playwright.Page;
 import com.rainbird.playwright_config.Playwright_Config;
+import java.util.Random;
 
 public class Register {
     //LOGO
@@ -12,7 +13,7 @@ public class Register {
     public final String registration_rights = "//div[@class='footer-right']";
 
     public static class Account_Information{
-
+        Random random = new Random();
         //ACCOUNT INFORMATION FILLING SECTIONS
         //LABEL OF FIELD
         public final String select_country_label = "//label[@class ='control-label required' and text()='Select Country']";
@@ -21,41 +22,47 @@ public class Register {
         public final String address_label = "//label[@class='control-label required' and @for='Address']";
         public final String city_label = "//label[@class='control-label required' and @for='City']";
         public final String postal_code_label = "//label[@class='control-label required' and @for='Zip']";
-        public final String state_label = "//label[@class='control-label required' and @for='State']";
+        public final String select_state_label = "//label[@class='control-label required' and @for='State']";
         public final String header = "//h2[contains(@class,'pageHeader')]";
         public final String info = "//p[@class='page-info']";
         //INPUT FIELD
         public final String select_country = "//select[@id='country-select']";
         public final String select_timezone = "//select[@id='TimeZoneId']";
+        public final String select_state = "//select[@id='state-dropdown']";
         public final String account_name = "//input[@id='Name']";
         public final String account_name_tooltip = "//i[@class='icon icon-icon-info']";
         public final String address = "//input[@id='Address']";
         public final String city = "//input[@id='City']";
         public final String postal_code = "//input[@id='Zip']";
-        public final String state = "//select[@id='state-dropdown']";
+
         //BUTTON
         public final String required_field_consent_checkbox= "//input[@id='ReceiveMarketingMsg']";
         public final String cancel_button = "//input[@type='button' and @value='Cancel']";
         public final String register_button = "//input[@type='submit' and @value='Register']";
 
-        //SELECT COUNTRY BY VALUE ATTRIBUTE
-        /**
-        * SELECT COUNTRY BY VALUE ATTRIBUTE:
-        * Interact with <option> tag by using VALUE
-        * The parameter must be TWO CHARACTERS
-        */
-        public String Select_country_by_index_value(int value_index){
-            return  "//select[@id='country-select']/option[" + value_index +"]";
-        }
-        //SELECT COUNTRY WITH EXACT LANGUAGE
-
+        //SELECT COUNTRY
         public String Select_country_by_text_value(String language){
             return "//select[@id='country-select']/option[text()='" + language + "']";
         }
-
-        //SELECT TIMEZONE BY VALUE ATTRIBUTE
+        public String Select_country_by_index_value(int value_index){
+            return  "//select[@id='country-select']/option[" + value_index +"]";
+        }
+        public int Select_country_by_random_index_value(){
+            return random.nextInt(1,141);
+        }
+        //SELECT TIMEZONE
         public String Select_timezone_by_index_value(int value_index){
             return "//select[@id='TimeZoneId']/option[" + value_index  + "]";
+        }
+        public int Select_timezone_by_random_index_value(){
+            return random.nextInt(1,143);
+        }
+        //SELECT STATE
+        public String Select_state_by_index_value(int value_index){
+            return "//select[@id='state-dropdown']/option[" + value_index + "]";
+        }
+        public int Select_state_by_random_index_value(){
+            return random.nextInt(1,59);
         }
     }
     public static class Contact_and_Login_Information{
@@ -93,6 +100,7 @@ public class Register {
         public final String confirm_password_error = "//div[@id='confirm-password-error']";
     }
     public static class Preferences{
+        Random random = new Random();
         //LABEL OF FIELD
         public final String select_language_label = "//label[@for='CultureId']";
         public final String select_unit_of_volume_label = "//label[@for='UnitsId']";
@@ -109,22 +117,7 @@ public class Register {
         public final String select_date_of_format = "//select[@id='DateFormatId']";
         public final String select_time_format = "//select[@id='TimeFormatId']";
 
-
-        public String Select_language_by_index_value(int value_index){
-            return  "//select[@id='language-select']/option[" + value_index +"']";
-        }
-        public String Select_unit_volume_by_index_value(int value_index){
-            return  "//select[@id='UnitsId']/option[" + value_index +"']";
-        }
-        public String Select_unit_area_by_index_value(int value_index){
-            return  "//select[@id='AreaFormat']/option[" + value_index +"']";
-        }
-        public String Select_date_format_by_index_value(int value_index){
-            return  "//select[@id='DateFormatId']/option[" + value_index +"']";
-        }
-        public String Select_time_format_by_index_value(int value_index){
-            return  "//select[@id='TimeFormatId']/option[" + value_index +"']";
-        }
+        //SELECT LANGUAGE IN PREFERENCES
          /**
           * SELECT LANGUAGE WITH LANGUAGE NUMBER:
           * - 1031 : GERMAN
@@ -142,6 +135,14 @@ public class Register {
         public static String Select_language_by_text_value(int language_number){
             return "//select[@id='language-select']/option[@value='" + language_number +"']";
         }
+        public String Select_language_by_index_value(int value_index){
+            return  "//select[@id='language-select']/option[" + value_index +"']";
+        }
+        public String Select_language_by_random_index_value(){
+            int random_index = random.nextInt(1,13);
+            return "//select[@id='language-select']/option[" + random_index +"']";
+        }
+        //SELECT UNITS OF VOLUME
         /**
          * SELECT UNIT OF VOLUME BY VALUE:
          * - 1 : Metric 1: (L/s)
@@ -152,15 +153,32 @@ public class Register {
         public static String Select_unit_of_volume_by_text_value(int unit_of_volume_value_number){
             return "//select[@id='UnitsId']/option[@value='" + unit_of_volume_value_number +"']";
         }
+        public String Select_unit_volume_by_index_value(int value_index){
+            return  "//select[@id='UnitsId']/option[" + value_index +"']";
+        }
+        public String Select_unit_volume_by_random_index_value(){
+            int random_index = random.nextInt(1,6);
+            return "//select[@id='UnitsId']/option[" + random_index +"']";
+        }
+
+        //SELECT UNITS OF AREA
         /**
          * SELECT UNIT OF AREA BY VALUE:
          * - 1 : yd²
          * - 2 : m²
          * - 0 : ft²
          * */
-        public static String Select_unit_of_Area_by_text_value(int unit_of_area_value_number){
+        public static String Select_unit_of_area_by_text_value(int unit_of_area_value_number){
             return "//select[@id='AreaFormat']/option[@value='"+ unit_of_area_value_number +"']";
         }
+        public String Select_unit_area_by_index_value(int value_index){
+            return  "//select[@id='AreaFormat']/option[" + value_index +"']";
+        }
+        public String Select_unit_area_by_random_index_value(){
+            int random_index = random.nextInt(1,5);
+            return "//select[@id='AreaFormat']/option[" + random_index +"']";
+        }
+        //SELECT DATE FORMAT
         /**
          * SELECT DATE FORMAT BY VALUE:
          * - 0 : MM-DD-YYYY
@@ -171,16 +189,31 @@ public class Register {
          * - 5 : DD.MM.YYYY
          * - 6 : YYYY/MM/DD
          * */
-        public static String Select_date_Format_by_text_value(int date_format_value_number){
+        public static String Select_date_format_by_text_value(int date_format_value_number){
             return "//select[@id='DateFormatId']/option[@value='" + date_format_value_number +"']";
         }
+        public String Select_date_format_by_index_value(int value_index){
+            return  "//select[@id='DateFormatId']/option[" + value_index +"']";
+        }
+        public String Select_date_format_by_random_index_value(){
+            int random_index = random.nextInt(1,9);
+            return "//select[@id='DateFormatId']/option[" + random_index +"']";
+        }
+        //SELECT TIME FORMAT
         /**
          * SELECT TIME FORMAT BY VALUE:
          * - 0 : AM / PM
          * - 1 : 24 Hours
          * */
-        public static String Select_time_Format_by_text_value(int time_format_value_number){
+        public static String Select_time_format_by_text_value(int time_format_value_number){
             return "//select[@id='TimeFormatId']/option[@value='" + time_format_value_number + "']";
+        }
+        public String Select_time_format_by_index_value(int value_index){
+            return  "//select[@id='TimeFormatId']/option[" + value_index +"']";
+        }
+        public String Select_time_format_by_random_index_value(){
+            int random_index = random.nextInt(1,4);
+            return "//select[@id='TimeFormatId']/option[" + random_index +"']";
         }
     }
     public static class Terms_of_license{
@@ -213,11 +246,5 @@ public class Register {
         public final String confirm_instruction = "//div[@class='confirm-content d-flex flex-column']/span[2]";
         public final String resend_request = "//div[contains(@class,'resend-content')]/span[text()='If you still don’t see it, resend the confirmation email']";
         public final String resend_button = "//a[text()='Resend email']";
-
-        public String Verified_email(){
-            Page page = Playwright_Config.getPage();
-            String confirm_content = page.locator(confirm_with_email).textContent().substring(25);
-            return confirm_content.replaceAll(" to confirm the validity of your email address.","");
-        }
     }
 }
