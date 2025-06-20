@@ -31,7 +31,7 @@ public class Register_with_random_data {
             System.out.println("* SELECT STATE field:");
             check.Result_evaluation(check.Availability_check(account_infor.select_state),"STATE field should not be CLICKABLE before \"United States\" is selected","STATE field is DISABLED when \"United States\" is UNSELECTED");
             Thread.sleep(1000);
-            action.Select_random_option(account_infor.select_country,2);
+            action.Select_random_option(account_infor.select_country, account_infor.Select_country_by_random_index_value());
         } catch (InterruptedException e){}
     }
     @And("User fill out Timezone")

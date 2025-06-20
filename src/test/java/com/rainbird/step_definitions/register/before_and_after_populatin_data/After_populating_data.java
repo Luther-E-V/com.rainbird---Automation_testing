@@ -15,7 +15,7 @@ public class After_populating_data {
     Actions action = new Actions();
     Check check = new Check();
     Processor processor = new Processor();
-    @When("User click Required field checkbox")
+    @And("User click Required field checkbox")
     public void user_click_required_field_checkbox() {
         try {
             Thread.sleep(1000);

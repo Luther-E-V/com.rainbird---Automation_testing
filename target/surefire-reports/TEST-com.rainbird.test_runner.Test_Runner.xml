@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.rainbird.test_runner.Test_Runner" time="63.59" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.rainbird.test_runner.Test_Runner" time="27.701" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing\target\test-classes;C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing\target\classes;C:\Users\Luther\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\Luther\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Luther\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Luther\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Luther\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\Luther\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\Luther\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Luther\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Luther\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\Luther\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Luther\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Luther\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Luther\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Luther\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="java.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\hi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\hi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\hi\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\hi\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\hi\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\hi\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\hi\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Saigon"/>
-    <property name="os.name" value="Windows 10"/>
+    <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="24"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="C:\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\Luther\AppData\Local\Temp\surefire14595203999509157566\surefirebooter-20250619164330872_3.jar C:\Users\Luther\AppData\Local\Temp\surefire14595203999509157566 2025-06-19T16-43-30_677-jvmRun1 surefire-20250619164330872_1tmp surefire_0-20250619164330872_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\hi\AppData\Local\Temp\surefire12427269325026848851\surefirebooter-20250621004308796_3.jar C:\Users\hi\AppData\Local\Temp\surefire12427269325026848851 2025-06-21T00-43-08_714-jvmRun1 surefire-20250621004308796_1tmp surefire_0-20250621004308796_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing\target\test-classes;C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing\target\classes;C:\Users\Luther\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\Luther\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Luther\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Luther\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Luther\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\Luther\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\Luther\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\Luther\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\Luther\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Luther\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Luther\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Luther\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\Luther\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\Luther\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Luther\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Luther\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Luther\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Luther\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\test-classes;C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird\target\classes;C:\Users\hi\.m2\repository\com\microsoft\playwright\playwright\1.51.0\playwright-1.51.0.jar;C:\Users\hi\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\hi\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver\1.51.0\driver-1.51.0.jar;C:\Users\hi\.m2\repository\com\microsoft\playwright\driver-bundle\1.51.0\driver-bundle-1.51.0.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\hi\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\hi\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\hi\.m2\repository\io\cucumber\query\13.3.0\query-13.3.0.jar;C:\Users\hi\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\hi\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\hi\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\hi\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\hi\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hi\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\hi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\hi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\hi\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\hi\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\hi\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\hi\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\hi\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Luther"/>
+    <property name="user.home" value="C:\Users\hi"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2025-03-18"/>
-    <property name="java.home" value="C:\jdk-24"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing"/>
+    <property name="basedir" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Luther\AppData\Local\Temp\surefire14595203999509157566\surefirebooter-20250619164330872_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hi\AppData\Local\Temp\surefire12427269325026848851\surefirebooter-20250621004308796_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24+36-3646"/>
-    <property name="user.name" value="Luther"/>
+    <property name="user.name" value="hi"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Luther\.m2\repository"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\hi\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\Luther\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\hi\AppData\Local\Temp\"/>
     <property name="java.version" value="24"/>
-    <property name="cucumber.filter.tags" value="@random_data"/>
-    <property name="user.dir" value="C:\Users\Luther\Desktop\com.rainbird\com.rainbird---Automation_testing"/>
+    <property name="cucumber.filter.tags" value="@customized_data"/>
+    <property name="user.dir" value="C:\Users\hi\Desktop\EERP_Internal_Auto_testing\com.rainbird"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\jdk-24;C:\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Users\Luther\AppData\Local\Microsoft\WindowsApps;C:\Users\Luther\PyCharm 2025.1\bin;;C:\Users\Luther\IntelliJ IDEA Community Edition 2025.1.1.1\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\hi\bin;D:\Git\mingw64\bin;D:\Git\usr\local\bin;D:\Git\usr\bin;D:\Git\usr\bin;D:\Git\mingw64\bin;D:\Git\usr\bin;C:\Users\hi\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Users\hi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages;D:\Git\cmd;D:\cursor\resources\app\bin;C:\Users\hi\AppData\Local\Android\Sdk;C:\Users\hi\AppData\Local\Android\Sdk\tools;C:\Users\hi\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\hi\AppData\Local\Programs\Python\Launcher;C:\Users\hi\AppData\Local\Microsoft\WindowsApps;C:\Users\hi\AppData\Roaming\npm;D:\PyCharm 2025.1\bin;D:\cursor\resources\app\bin;D:\IntelliJ IDEA 2025.1.1.1\bin;D:\IntelliJ IDEA Community Edition 2025.1.1.1\bin;D:\Git\usr\bin\vendor_perl;D:\Git\usr\bin\core_perl;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -59,97 +59,74 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="User access page and start to register an account" classname="Registration #2" time="49.749">
+  <testcase name="User access page and start to register an account" classname="Registration #1" time="18.273">
+    <error message="com/fasterxml/jackson/annotation/JsonView" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/annotation/JsonView
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.<clinit>(JacksonAnnotationIntrospector.java:37)
+	at com.fasterxml.jackson.databind.ObjectMapper.<clinit>(ObjectMapper.java:402)
+	at com.rainbird.test_data_loader.Test_data_loader.<clinit>(Test_data_loader.java:13)
+	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.Get_data(Register_with_customized_data.java:25)
+	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_country(Register_with_customized_data.java:44)
+	at ✽.User fill out "<Country>" as Country(file:///C:/Users/hi/Desktop/EERP_Internal_Auto_testing/com.rainbird/src/test/resources/Features/register/Register_with_customized_data.feature:9)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.annotation.JsonView
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 6 more
+]]></error>
     <system-out><![CDATA[Test begins
 
-@random_data
-Scenario: User access page and start to register an account &amp#27;[90m# src/test/resources/Features/register/Register_with_random_data.feature:3&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser access to page&amp#27;[0m                                 &amp#27;[90m# com.rainbird.step_definitions.global.Global.user_access_to_page()&amp#27;[0m
+@customized_data
+Scenario Outline: User access page and start to register an account &amp#27;[90m# src/test/resources/Features/register/Register_with_customized_data.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser access to page&amp#27;[0m                                         &amp#27;[90m# com.rainbird.step_definitions.global.Global.user_access_to_page()&amp#27;[0m
 * Create Account link text: 
   - CREATE ACCOUNT link text is CLICKABLE
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click CREATE ACCOUNT&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_click_create_an_account()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click CREATE ACCOUNT&amp#27;[0m                                    &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_click_create_an_account()&amp#27;[0m
 * Term of licence content: 
-  - User is NOT NAVIGATED to Term of licence page
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Term of licence page&amp#27;[0m            &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_is_navigated_to_term_of_licence_page()&amp#27;[0m
+  - User is NAVIGATED to Term of licence page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Term of licence page&amp#27;[0m                    &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_is_navigated_to_term_of_licence_page()&amp#27;[0m
 * Terms agreement checkbox: 
   - Checkbox is VISIBLE
   - Checkbox is CLICKABLE
   - Checkbox is CLICKED
 * Accept button: 
   - ACCEPT button is CLICKABLE
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser read and click consent checkbox&amp#27;[0m                 &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_read_and_click_consent_checkbox()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser read and click consent checkbox&amp#27;[0m                         &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_read_and_click_consent_checkbox()&amp#27;[0m
 * Registration title text:
   - User is NAVIGATED to Registration page
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Registration page&amp#27;[0m               &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_is_navigated_to_registration_page()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser is navigated to Registration page&amp#27;[0m                       &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.Before_populating_data.user_is_navigated_to_registration_page()&amp#27;[0m
 * SELECT COUNTRY field:
   - SELECT COUNTRY label is VISIBLE
   - SELECT COUNTRY field is CLICKABLE
 * SELECT STATE field:
-  - STATE field is DISABLED when "United States" is UNSELECTED
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser fill out Country&amp#27;[0m                                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_country()&amp#27;[0m
-  - TIMEZONE label is VISIBLE
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Timezone&amp#27;[0m                                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.timezone()&amp#27;[0m
-* SELECT STATE field:
   - STATE label is VISIBLE
-  - STATE field should be DISABLED when SELECT COUNTRY is not "United States"
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out State&amp#27;[0m                                   &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.state()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Account Name&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_account_name()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Address&amp#27;[0m                                 &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_address()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out City&amp#27;[0m                                    &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_city()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Postal Code&amp#27;[0m                             &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_postal_code()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Contact Name&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_contact_name()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Phone Number&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_phone_number()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Email&amp#27;[0m                                   &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_email()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Confirm Email&amp#27;[0m                           &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_confirm_email()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out User Name&amp#27;[0m                               &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_username()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Password&amp#27;[0m                                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_password()&amp#27;[0m
-* User's account information:
- 
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-[Account name: wyatt.hickle, Address: 508 Leuschke Pike, City: Port Rhettburgh, Postal code: 36892, Contact name: Derick Ritchie MD, Phone number: 32369643245623, Email: 123321123@gmail.com, Confirm email: 123321123@gmail.com, Username: yer.hermiston, Password: zF5"eoANLwZ9, Confirm password: zF5"eoANLwZ9]
-
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fill out Confirm Password&amp#27;[0m                        &amp#27;[90m# com.rainbird.step_definitions.register.register_with_random_data.Register_with_random_data.user_fill_out_confirm_password()&amp#27;[0m
-* Required field checkbox:
-  - Required field checkbox is not CHECKED before CLICKED
-  - Required field checkbox is CHECKED after CLICKED
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click Required field checkbox&amp#27;[0m                   &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.user_click_required_field_checkbox()&amp#27;[0m
-* Register button:
-  - Register button is CLICKABLE
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser click Register button&amp#27;[0m                            &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.u_ser_click_register_button()&amp#27;[0m
-* Verification page title:
-  - User is navigated to Email Verification page
-* Confirm Email text:
-  - Confirm with Email is VISIBLE
-* Confirm Instruction text:
-  - Confirm Instruction is VISIBLE
-* Resend Request:
-  - Resend Request is VISIBLE
-* Resend button:
-  - Resend button EXISTS
-  - Resend button is CLICKABLE
-- Email receiving verification: 
-   to 123321123@gmail.com
-		
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should be navigated to Email Verification page&amp#27;[0m  &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.user_should_be_navigated_to_email_verification_page()&amp#27;[0m
+  - STATE field is DISABLED when United States is UNSELECTED
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser fill out &amp#27;[0m&amp#27;[31m&amp#27;[1m"<Country>"&amp#27;[0m&amp#27;[31m as Country&amp#27;[0m                         &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_country(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.NoClassDefFoundError: com/fasterxml/jackson/annotation/JsonView
+      	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.<clinit>(JacksonAnnotationIntrospector.java:37)
+      	at com.fasterxml.jackson.databind.ObjectMapper.<clinit>(ObjectMapper.java:402)
+      	at com.rainbird.test_data_loader.Test_data_loader.<clinit>(Test_data_loader.java:13)
+      	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.Get_data(Register_with_customized_data.java:25)
+      	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_country(Register_with_customized_data.java:44)
+      	at ✽.User fill out "<Country>" as Country(file:///C:/Users/hi/Desktop/EERP_Internal_Auto_testing/com.rainbird/src/test/resources/Features/register/Register_with_customized_data.feature:9)
+      Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.annotation.JsonView
+      	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+      	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+      	... 6 more&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Timezone>"&amp#27;[0m&amp#27;[36m as Timezone&amp#27;[0m                        &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.timezone(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Account Name>"&amp#27;[0m&amp#27;[36m as Account Name&amp#27;[0m                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_account_name(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Address>"&amp#27;[0m&amp#27;[36m as Address&amp#27;[0m                          &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_address(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<City>"&amp#27;[0m&amp#27;[36m as City&amp#27;[0m                                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_city(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Postal Code>"&amp#27;[0m&amp#27;[36m as Postal Code&amp#27;[0m                  &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_postal_code(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<State>"&amp#27;[0m&amp#27;[36m as State&amp#27;[0m                              &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_state(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out "<Contact Name>"Contact Name&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Phone Number>"&amp#27;[0m&amp#27;[36m as Phone Number&amp#27;[0m                &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_phone_number(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Email>"&amp#27;[0m&amp#27;[36m as Email&amp#27;[0m                              &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_email(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Confirm Email>"&amp#27;[0m&amp#27;[36m as Confirm Email&amp#27;[0m              &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_confirm_email(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out "<User Name>" as User Name&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Password>"&amp#27;[0m&amp#27;[36m as Password&amp#27;[0m                        &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser fill out &amp#27;[0m&amp#27;[36m&amp#27;[1m"<Confirm Password>"&amp#27;[0m&amp#27;[36m as Confirm Password&amp#27;[0m        &amp#27;[90m# com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_confirm_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser click Required field checkbox&amp#27;[0m                           &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.user_click_required_field_checkbox()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser click Register button&amp#27;[0m                                    &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.u_ser_click_register_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should be navigated to Email Verification page&amp#27;[0m          &amp#27;[90m# com.rainbird.step_definitions.register.before_and_after_populatin_data.After_populating_data.user_should_be_navigated_to_email_verification_page()&amp#27;[0m
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -4,7 +4,6 @@ import com.microsoft.playwright.Page;
 import com.rainbird.pages.register_page.Register;
 import com.rainbird.playwright_config.Playwright_Config;
 import com.rainbird.utils.actions.Actions;
-
 import java.util.ArrayList;
 
 public class Processor {
@@ -15,9 +14,8 @@ public class Processor {
 
     public void Get_user_register_information(){
         for (String value : user_register_information){
-            System.out.println(user_register_information + "\n");
+            System.out.println(value + "\n");
         }
-
     }
 
     public void Retrieve_value_input(String xpath,String field){

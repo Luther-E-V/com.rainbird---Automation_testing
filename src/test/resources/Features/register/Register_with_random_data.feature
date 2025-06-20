@@ -20,6 +20,6 @@ Feature: Registration
   And User fill out User Name
   And User fill out Password
   And User fill out Confirm Password
-  When User click Required field checkbox
+  And User click Required field checkbox
   And User click Register button
   Then User should be navigated to Email Verification page
