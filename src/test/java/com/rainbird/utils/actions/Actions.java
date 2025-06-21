@@ -9,15 +9,15 @@ public class Actions {
 
     public Page page = Playwright_Config.getPage();
 
-    public void Click(String xpath){
+    public void click(String xpath){
         page.locator(xpath).click();
     }
 
-    public void Select(String select_xpath, String option_value){
+    public void select(String select_xpath, String option_value){
         page.locator(select_xpath).selectOption(option_value);
     }
-    public void Select_random_option(String select_xpath,int index){
-        page.locator(select_xpath).selectOption(new SelectOption().setIndex(index));
+    public void selectrandomOption(String select_xpath,int option_index){
+        page.locator(select_xpath).selectOption(new SelectOption().setIndex(option_index));
     }
     public void Hover(String xpath){
         page.locator(xpath).hover();

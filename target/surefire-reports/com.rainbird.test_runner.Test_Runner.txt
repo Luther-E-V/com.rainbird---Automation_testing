@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.rainbird.test_runner.Test_Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.70 s <<< FAILURE! -- in com.rainbird.test_runner.Test_Runner
-Registration #1.User access page and start to register an account -- Time elapsed: 18.27 s <<< ERROR!
-java.lang.NoClassDefFoundError: com/fasterxml/jackson/annotation/JsonView
-	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.<clinit>(JacksonAnnotationIntrospector.java:37)
-	at com.fasterxml.jackson.databind.ObjectMapper.<clinit>(ObjectMapper.java:402)
-	at com.rainbird.test_data_loader.Test_data_loader.<clinit>(Test_data_loader.java:13)
-	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.Get_data(Register_with_customized_data.java:25)
-	at com.rainbird.step_definitions.register.register_with_customized_data.Register_with_customized_data.user_fill_out_country(Register_with_customized_data.java:44)
-	at ✽.User fill out "<Country>" as Country(file:///C:/Users/hi/Desktop/EERP_Internal_Auto_testing/com.rainbird/src/test/resources/Features/register/Register_with_customized_data.feature:9)
-Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.annotation.JsonView
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-	... 6 more
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.30 s -- in com.rainbird.test_runner.Test_Runner

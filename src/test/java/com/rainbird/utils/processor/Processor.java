@@ -12,31 +12,31 @@ public class Processor {
     public Page page = Playwright_Config.getPage();
     private static ArrayList<String> user_register_information = new ArrayList<>();
 
-    public void Get_user_register_information(){
+    public void getUser_RegisterInformation(){
         for (String value : user_register_information){
             System.out.println(value + "\n");
         }
     }
 
-    public void Retrieve_value_input(String xpath,String field){
+    public void retrieveInputValue(String xpath,String field){
         String value_input = page.locator(xpath).inputValue();
         String user_information = field + ": " + value_input;
         user_register_information.add(user_information);
     }
 
-    public void Retrieve_selected_option_text(String xpath,String field){
+    public void retrieveSelectedOptionText(String xpath,String field){
         String option_text = (String) page.locator(xpath).evaluate("sel => sel.options[sel.selectedIndex].innerText");
         String user_information = field + ": " + option_text;
         user_register_information.add(user_information);
     }
 
-    public String Get_selected_option_text(String xpath){
+    public String getSelectedOptionText(String xpath){
         return page.locator(xpath).evaluate("sel => sel.options[sel.selectedIndex].innerText").toString();
     }
-    public String Get_value_input(String xpath){
+    public String getInputValue(String xpath){
         return page.locator(xpath).inputValue();
     }
-    public String Email_receive_verification(){
+    public String getVerifiedEmail(){
         Page page = Playwright_Config.getPage();
         String confirm_content = page.locator(verification.confirm_with_email).textContent().substring(25);
         return confirm_content.replaceAll(" to confirm the validity of your email address.","");

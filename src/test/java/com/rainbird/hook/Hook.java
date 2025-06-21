@@ -16,7 +16,7 @@ public class Hook {
 
     @AfterAll
     public static void Teardown(){
-        Playwright_Config.Playwright_teardown();
+        Playwright_Config.teardownPlaywright();
         System.out.println("Test finished");
     }
 }

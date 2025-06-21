@@ -21,8 +21,8 @@ public class Before_populating_data {
         try {
             Thread.sleep(1000);
             System.out.println("* Create Account link text: ");
-            check.Result_evaluation(check.Availability_check(login.create_account),"CREATE ACCOUNT link text is CLICKABLE","CREATE ACCOUNT link text is DISABLED");
-            action.Click(login.create_account);
+            check.evaluateResult(check.checkAvailability(login.create_account),"CREATE ACCOUNT link text is CLICKABLE","CREATE ACCOUNT link text is DISABLED");
+            action.click(login.create_account);
         } catch (InterruptedException e){}
     }
 
@@ -31,7 +31,7 @@ public class Before_populating_data {
         try {
             Thread.sleep(1000);
             System.out.println("* Term of licence content: ");
-            check.Result_evaluation(check.Existence_check(license.term_of_licence_content),"User is NAVIGATED to Term of licence page","User is NOT NAVIGATED to Term of licence page");
+            check.evaluateResult(check.checkExistence(license.term_of_licence_content),"User is NAVIGATED to Term of licence page","User is NOT NAVIGATED to Term of licence page");
         } catch (InterruptedException e){}
     }
     @When("User read and click consent checkbox")
@@ -39,15 +39,15 @@ public class Before_populating_data {
         try {
             Thread.sleep(1000);
             System.out.println("* Terms agreement checkbox: ");
-            check.Result_evaluation(check.Visibility_check(license.terms_agreement_checkbox),"Checkbox is VISIBLE","Checkbox is INVISIBLE");
-            check.Result_evaluation(check.Availability_check(license.terms_agreement_checkbox),"Checkbox is CLICKABLE","Checkbox is DISABLED");
+            check.evaluateResult(check.checkVisibility(license.terms_agreement_checkbox),"Checkbox is VISIBLE","Checkbox is INVISIBLE");
+            check.evaluateResult(check.checkAvailability(license.terms_agreement_checkbox),"Checkbox is CLICKABLE","Checkbox is DISABLED");
             Thread.sleep(1000);
-            action.Click(license.terms_agreement_checkbox);
-            check.Result_evaluation(check.boxCheck_check(license.terms_agreement_checkbox),"Checkbox is CLICKED","Checkbox is NOT CLICKED");
+            action.click(license.terms_agreement_checkbox);
+            check.evaluateResult(check.checkBoxCheck(license.terms_agreement_checkbox),"Checkbox is CLICKED","Checkbox is NOT CLICKED");
             Thread.sleep(1000);
             System.out.println("* Accept button: ");
-            check.Result_evaluation(check.Availability_check(license.accept_button),"ACCEPT button is CLICKABLE","ACCEPT button is DISABLED");
-            action.Click(license.accept_button);
+            check.evaluateResult(check.checkAvailability(license.accept_button),"ACCEPT button is CLICKABLE","ACCEPT button is DISABLED");
+            action.click(license.accept_button);
         } catch (InterruptedException e){}
     }
     @Then("User is navigated to Registration page")
@@ -55,7 +55,7 @@ public class Before_populating_data {
         try {
             Thread.sleep(1000);
             System.out.println("* Registration title text:");
-            check.Result_evaluation(check.Visibility_check(register.registration_title_text),"User is NAVIGATED to Registration page","User is NOT NAVIGATED to Registration page");
+            check.evaluateResult(check.checkVisibility(register.registration_title_text),"User is NAVIGATED to Registration page","User is NOT NAVIGATED to Registration page");
         } catch (InterruptedException e){}
     }
 }

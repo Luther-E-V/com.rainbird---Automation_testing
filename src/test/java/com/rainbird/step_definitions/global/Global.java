@@ -12,5 +12,4 @@ public class Global {
             Playwright_Config.Navigation();
         } catch (InterruptedException e){}
     }
-
 }

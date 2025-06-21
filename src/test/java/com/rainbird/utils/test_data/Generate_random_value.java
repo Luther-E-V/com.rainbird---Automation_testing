@@ -1,10 +1,8 @@
-package com.rainbird.utils.custom_data;
+package com.rainbird.utils.test_data;
 
 import com.github.javafaker.Faker;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 

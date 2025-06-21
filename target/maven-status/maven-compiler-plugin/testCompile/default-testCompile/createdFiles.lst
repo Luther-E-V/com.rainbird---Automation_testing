@@ -4,7 +4,6 @@ com\rainbird\step_definitions\register\before_and_after_populatin_data\After_pop
 com\rainbird\pages\register_page\Register$Email_Verification.class
 com\rainbird\test_data_loader\Test_data_loader.class
 com\rainbird\utils\check\Check.class
-com\rainbird\utils\custom_data\Generate_random_value.class
 com\rainbird\pages\login_page\Login.class
 com\rainbird\pages\register_page\Register$Terms_of_license.class
 com\rainbird\pages\register_page\Register$Account_Information.class
@@ -18,4 +17,6 @@ com\rainbird\utils\actions\Actions.class
 com\rainbird\playwright_config\Playwright_Config.class
 com\rainbird\hook\Hook.class
 com\rainbird\step_definitions\register\register_with_customized_data\Register_with_customized_data.class
+com\rainbird\utils\test_data\Generate_random_value.class
+com\rainbird\utils\test_data\Data_set.class
 com\rainbird\test_data_loader\Test_data_loader$1.class

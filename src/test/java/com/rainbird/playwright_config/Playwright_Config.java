@@ -43,7 +43,7 @@ public class Playwright_Config {
         page.navigate(base_url);
     }
 
-    public static void Playwright_teardown(){
+    public static void teardownPlaywright(){
         if (page != null) page.close();
         if (browser != null) browser.close();
         if (playwright != null) playwright.close();
